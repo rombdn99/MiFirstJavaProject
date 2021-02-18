@@ -11,13 +11,14 @@ public class SumaNumerosEnterosTest {
 	@Test
 	public void testGeneracionArray() {
 		SumaNumerosEnteros suma= new SumaNumerosEnteros();
-		suma.generacionArray(suma.arraydevalores);
+		suma.generacionArray();
+		assertTrue(suma.generacionArray() instanceof int[]);
 	}
 
 	@Test
 	public void testSumaArray() {
 		SumaNumerosEnteros suma= new SumaNumerosEnteros();
-		assertEquals(suma.sumaArray(suma.generacionArray(suma.arraydevalores)),2450);
+		assertEquals(suma.sumaArray(suma.generacionArray()),2450);
 	}
 
 }

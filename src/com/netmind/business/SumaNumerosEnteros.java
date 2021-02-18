@@ -1,8 +1,8 @@
 package com.netmind.business;
 
 public class SumaNumerosEnteros {
-	public int [] arraydevalores = new int[100];
-	public int[] generacionArray(int [] arrayvalores){
+	public int[] generacionArray(){
+		int [] arrayvalores = new int[100];
 		for (int i=0;i<arrayvalores.length;i++)
 			arrayvalores[i]=i;
 		return arrayvalores;
@@ -13,7 +13,6 @@ public class SumaNumerosEnteros {
 			if(i%2==0){
 				suma+=arrayvalores[i];
 			}
-			System.out.println(i);
 		}
 		return suma;
 	}
