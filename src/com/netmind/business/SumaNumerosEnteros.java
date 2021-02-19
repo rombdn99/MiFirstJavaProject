@@ -9,11 +9,8 @@ public class SumaNumerosEnteros {
 	}
 	public int sumaArray(int arrayvalores[]){
 		int suma=0;
-		for (int i=0;i<arrayvalores.length;i++){
-			if(i%2==0){
-				suma+=arrayvalores[i];
-			}
-		}
+		for (int i=0;i<arrayvalores.length;i+=2)
+			suma+=arrayvalores[i];
 		return suma;
 	}
 }
