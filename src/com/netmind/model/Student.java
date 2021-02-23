@@ -63,20 +63,28 @@ public class Student {
 
 	}
 
+	/*
+	 * @Override public String toString() { StringBuilder builder = new
+	 * StringBuilder(); builder.append("Student [idStudent=");
+	 * builder.append(idStudent); builder.append(", name=");
+	 * builder.append(name); builder.append(", surname=");
+	 * builder.append(surname); builder.append(", age="); builder.append(age);
+	 * builder.append(", dateOfBirth="); builder.append(dateOfBirth);
+	 * builder.append("]"); return builder.toString(); }
+	 */
+
 	@Override
 	public String toString() {
 		StringBuilder builder = new StringBuilder();
-		builder.append("Student [idStudent=");
 		builder.append(idStudent);
-		builder.append(", name=");
+		builder.append(",");
 		builder.append(name);
-		builder.append(", surname=");
+		builder.append(",");
 		builder.append(surname);
-		builder.append(", age=");
+		builder.append(",");
 		builder.append(age);
-		builder.append(", dateOfBirth=");
+		builder.append(",");
 		builder.append(dateOfBirth);
-		builder.append("]");
 		return builder.toString();
 	}
 
