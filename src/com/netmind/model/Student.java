@@ -73,35 +73,18 @@ public class Student {
 	 * builder.append("]"); return builder.toString(); }
 	 */
 
-	public String toFileFormat() {
-		StringBuilder builder = new StringBuilder();
-		builder.append(idStudent);
-		builder.append(",");
-		builder.append(name);
-		builder.append(",");
-		builder.append(surname);
-		builder.append(",");
-		builder.append(age);
-		builder.append(",");
-		builder.append(dateOfBirth);
-		builder.append(";");
-		return builder.toString();
-	}
-
 	@Override
 	public String toString() {
 		StringBuilder builder = new StringBuilder();
-		builder.append("Student [idStudent=");
 		builder.append(idStudent);
-		builder.append(", name=");
+		builder.append(",");
 		builder.append(name);
-		builder.append(", surname=");
+		builder.append(",");
 		builder.append(surname);
-		builder.append(", age=");
+		builder.append(",");
 		builder.append(age);
-		builder.append(", dateOfBirth=");
+		builder.append(",");
 		builder.append(dateOfBirth);
-		builder.append("]");
 		return builder.toString();
 	}
 
