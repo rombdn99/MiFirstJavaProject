@@ -8,31 +8,28 @@ import com.netmind.business.StudentBl;
 import com.netmind.model.Student;
 
 public class Menu {
-	public int menuPrincipal() {
-		Scanner sc = new Scanner(System.in);
-
+	public int menuPrincipal(Scanner sc) {
 		System.out.println("Que opcion quiere seleccionar?");
 		System.out.println("1. Agregar un nuevo estudiante");
 		System.out.println("2. Calcular el estudiante con mayor edad");
 		System.out
 				.println("3. Calcular la media de edad de todos los estudiantes");
 		System.out.println("4. Salir");
-		int option = sc.nextInt();
+		int option = Integer.parseInt(sc.nextLine());
 		return option;
 
 	}
 
-	public void menuAddStudent() {
+	public void menuAddStudent(Scanner sc) {
 		StudentBl studentBl = new StudentBl();
 		Student student = new Student();
-		Scanner scanner = new Scanner(System.in);
 		String dateOfBirth;
 		System.out.println("Introduce tu nombre");
-		student.setName(scanner.nextLine());
+		student.setName(sc.nextLine());
 		System.out.println("Introduce tu Apellido");
-		student.setSurname(scanner.nextLine());
+		student.setSurname(sc.nextLine());
 		System.out.println("Introduce tu Fecha de nacimiento (dd/MM/yyyy):");
-		dateOfBirth = scanner.nextLine();
+		dateOfBirth = sc.nextLine();
 
 		try {
 			SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
