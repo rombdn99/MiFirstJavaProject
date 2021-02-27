@@ -20,15 +20,13 @@ public class Principal {
 			case ADD_STUDENT:
 				menus.menuAddStudent(sc);
 				break;
-			case OLDEST_STUDENT:
-				System.out.print("La edad maxima de los estudiantes es ");
-				System.out.println(studentBl.maximunStudentAge());
-				break;
-			case READ_STUDENTFILE:
-				System.out.println(studentBl.readFile());
+			case EXIT:
+				System.out.print("Good Bye!!");
+				exit = false;
 				break;
 			default:
-				exit = false;
+				System.out.print("Error: No has introducido el valor correcto");
+				exit = true;
 				break;
 			}
 
